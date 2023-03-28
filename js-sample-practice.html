@@ -8,6 +8,11 @@
         let addButton = document.getElementById("add-status");
         let statusNum = 1;
 
+        const introduction = document.getElementById("introduction");
+
+        introduction.innerHTML = "This is a new paragraph.";
+        introduction.style.color = "red";
+
         //add button
         addButton.addEventListener("click", function () {
           const actionStatus = document.getElementById("action-status");
@@ -33,7 +38,7 @@
 
   <body>
     <h1>JavaScript Sample</h1>
-    <p class="introduction">This is a sample paragraph.</p>
+    <p id="introduction">This is a sample paragraph.</p>
     <button id="add-status">Add Status</button>
     <button id="delete-status">Delete Status</button>
     <p id="action-status">Action Status:</p>
